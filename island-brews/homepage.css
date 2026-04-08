@@ -37,7 +37,7 @@ body {
 
 /* IMPORTANT: Make all images responsive */
 img {
-  max-width: 100px;                /* Use 100px so images never overflow */
+  max-width: 100%;                /* Use 100px so images never overflow */
   height: auto;                   /* Use "auto" to keep proportions */
 }
 
@@ -207,7 +207,7 @@ footer {
 
   /* Cards: side-by-side on tablet */
   .card-container {
-    flex-direction: column;         /* Use "column" to lay out cards horizontally */
+    flex-direction: row;         /* Use "column" to lay out cards horizontally */
     flex-wrap: wrap;              /* Use "wrap" so cards can wrap to next row */
   }
 
