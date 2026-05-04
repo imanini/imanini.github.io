@@ -1,189 +1,121 @@
 /* ===================
    Color Scheme
-   ===================
-   Primary: #7c9cf5 (soft blue/lavender)
-   Primary hover: #5a78d6
-   Text: #1f2937 (dark gray)
-   Text muted: #6b7280 (light gray)
-   Background: #f9fafb (very light gray)
-   Border: #e5e7eb (light gray)
-*/
-
-/* ===================
-   Color Scheme
-   ===================
-   Primary: #7c9cf5
-   Primary hover: #5a78d6
-   Text: #1f2937
-   Text muted: #6b7280
-   Background: #f9fafb
-   Border: #e5e7eb
-*/
-
-/* ===================
-   Reset & Base
    =================== */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  font-size: 16px;
   line-height: 1.6;
   color: #1f2937;
-
-  /* Soft gradient background */
   background: linear-gradient(to bottom, #f9fafb, #eef2ff);
 }
 
-/* ===================
-   Typography
-   =================== */
+/* Typography */
 h1, h2, h3 {
   line-height: 1.2;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #7c9cf5;
-  text-align: center;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 30px 20px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+header h1 {
+  margin: 0;
   margin-bottom: 10px;
 }
 
-p {
-  max-width: 800px;
-}
-
-/* ===================
-   Links
-   =================== */
-a {
-  color: #7c9cf5;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-a:hover {
-  color: #5a78d6;
-  text-decoration: underline;
-}
-
-/* ===================
-   Layout
-   =================== */
-header {
-  padding: 25px 20px;
-  border-bottom: 1px solid #e5e7eb;
-  background-color: white;
-
-  /* ✨ subtle shadow */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-main {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* ✨ Card-style sections */
-section {
-  background-color: white;
-  padding: 25px;
-  margin-bottom: 30px;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-
-  /* smooth animation */
-  transition: transform 0.2s ease
-  box-shadow: 0.2s ease;
-}
-
-/* Lift effect on hover */
-section: hover; {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-/* Footer */
-footer {
-  padding: 20px;
-  border-top: 1px solid #e5e7eb;
-  text-align: center;
-  background-color: white;
-  color: #6b7280;
-  margin-top: 20px;
-}
-
-/* ===================
-   Navigation
-   =================== */
+/* Navigation */
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 15px;
-
   display: flex;
   justify-content: center;
   gap: 25px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
   font-weight: bold;
+  text-decoration: none;
+  color: #7c9cf5;
   padding: 6px 12px;
   border-radius: 6px;
   transition: 0.3s;
 }
 
-/* Nav hover highlight */
 nav a:hover {
-  background-color: #7c9cf5;
+  background: #7c9cf5;
   color: white;
 }
 
-/* ===================
-   Images
-   =================== */
-img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+/* Layout */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section {
+  background: white;
+  padding: 25px;
+  margin-bottom: 30px;
+  border: 1px solid #e5e7eb;
   border-radius: 10px;
 }
 
-/* ===================
-   Form Styling
-   =================== */
-form {
-  max-width: 600px;
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-top: 1px solid #e5e7eb;
+  color: #6b7280;
 }
 
+/* Images */
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Forms */
 input, textarea, select {
   width: 100%;
   padding: 10px;
-  margin-top: 5px;
   margin-bottom: 15px;
   border: 1px solid #e5e7eb;
   border-radius: 5px;
 }
 
-/* Button */
 button {
-  background-color: #7c9cf5;
+  background: #7c9cf5;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
-button: hover; {
-  background-color: #5a78d6;
+button:hover {
+  background: #5a78d6;
 }
