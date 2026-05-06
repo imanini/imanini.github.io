@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mind Matters: Student Mental Health Awareness - Home</title>
-    
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="homepage.css">
 </head>
@@ -14,11 +14,25 @@
 <header>
     <h1>Mind Matters: Student Mental Health Awareness</h1>
 
-    <nav>
+    <nav aria-label="Main Navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
+
             <li><a href="about.html">About</a></li>
-            <li><a href="resources.html">Resources</a></li>
+
+            <li class="dropdown">
+                <a href="resources.html">Resources</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="coping.html">Coping Strategies</a></li>
+                    <li><a href="care.html">Self-Care Ideas</a></li>
+                    <li><a href="information.html">Mental Health Information</a></li>
+                    <li><a href="support.html">Support Services</a></li>
+                    <li><a href="resources.html">Crisis Resources</a></li>
+                    <li><a href="advice.html">Student Advice</a></li>
+                </ul>
+            </li>
+
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -27,10 +41,11 @@
 <main>
 
     <section>
-        <img src="images/mind.jpg"
-             alt="Illustration of a head silhouette with tangled arrows above it." width="600">
-
         <h2>Introduction</h2>
+
+        <img src="images/mind.jpg"
+             alt="Illustration of a head silhouette with tangled arrows above it."
+             width="600">
 
         <p>Welcome to my website! Being a student can be stressful, and mental health matters. My website is here to offer support, understanding, and helpful resources for students at every stage of their journey. Whether you’re feeling overwhelmed or just looking for information, you’re welcome here and you’re not alone.</p>
 
@@ -42,10 +57,15 @@
 
         <ul>
             <li><strong><a href="coping.html">Coping Strategies</a></strong> - Simple techniques for managing stress, anxiety, and overwhelming emotions.</li>
-            <li><strong><a href="care.html">Self-care Ideas</a></strong> - Easy, realistic ways students can look after their mental wellbeing.</li>
+
+            <li><strong><a href="care.html">Self-Care Ideas</a></strong> - Easy, realistic ways students can look after their mental wellbeing.</li>
+
             <li><strong><a href="information.html">Mental Health Information</a></strong> - Clear explanations of common mental health challenges.</li>
+
             <li><strong><a href="support.html">Support Services</a></strong> - Information about counselors and student support services.</li>
+
             <li><strong><a href="resources.html">Crisis and Helpline Resources</a></strong> - Contact details for emergency support.</li>
+
             <li><strong><a href="advice.html">Advice For Everyday Student Life</a></strong> - Tips on managing academic and social stress.</li>
         </ul>
     </section>
@@ -53,9 +73,22 @@
 </main>
 
 <footer>
-  <p>© 2026 Isabella Manini | Mind Matters</p>
-  <p><strong>Image Credits</strong><br></p>
-    <p>Hero Background: Photo by <a href=https://www.pexels.com/@tara-winstead> Tara Winstead</a> on <a href=https://www.pexels.com/photo/adhd-drawing-on-chalkboard-8378736>Pexels</a>.</p>
+    <p>© 2026 Isabella Manini | Mind Matters</p>
+
+    <p><strong>Image Credits</strong></p>
+
+    <p>
+        Hero Background: Photo by
+        <a href="https://www.pexels.com/@tara-winstead">
+            Tara Winstead
+        </a>
+        on
+        <a href="https://www.pexels.com/photo/adhd-drawing-on-chalkboard-8378736">
+            Pexels
+        </a>.
+    </p>
+
+    <p><a href="accessibility.html">Accessibility</a></p>
 </footer>
 
 </body>
