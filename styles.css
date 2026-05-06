@@ -69,6 +69,63 @@ nav a:hover {
   color: white;
 }
 
+/* ===================
+   Dropdown Navigation
+   =================== */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+
+  top: 100%;
+  left: 0;
+
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  min-width: 220px;
+
+  padding: 10px 0;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  z-index: 1000;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Stack dropdown links vertically */
+.dropdown-menu li {
+  display: block;
+}
+
+/* Dropdown links */
+.dropdown-menu a {
+  display: block;
+
+  padding: 10px 16px;
+
+  color: #1f2937;
+
+  text-decoration: none;
+
+  transition: background 0.3s;
+}
+
+/* Hover effect */
+.dropdown-menu a:hover {
+  background: #eef2ff;
+  color: #7c9cf5;
+}
+
 /* Layout */
 main {
   max-width: 1000px;
